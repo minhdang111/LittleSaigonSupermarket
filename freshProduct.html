@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <title>Fresh Product - Little Saigon Supermarket</title>
+</head>
+<body style="margin: 0;">
+    <div id="logo" style="display: flex; align-items: center;">
+        <div style="flex: 1;"></div>
+        <div style="flex: 1; display: flex; justify-content: center;">
+            <img src="assets/logo.png" height="200px" width="400px" style="max-width: 100%;">
+        </div>
+        <div style="flex: 1; font-size: 22px; padding: 10px; text-align: right;">
+            <address style="font-style: normal;">
+                353 University Ave W<br>
+                Saint Paul, MN 55103
+            </address>
+            <a href="tel:+16512277136" style="text-decoration: none;">(651) 227 - 7136</a>
+        </div>
+    </div>
+    <nav style="background-color: rgb(194, 29, 29); text-align: center; display: flex; flex-wrap: wrap;">
+        <div id="navBlock">
+            <a id="navItem" href="index.html">Home</a>
+        </div>
+        <div id="navBlock">
+            <a id="navItem" href="deli.html">Deli</a>
+        </div>
+        <div id="navBlock">
+            <a id="navItem" href="groceries.html">Groceries</a>
+        </div>
+        <div id="navBlock">
+            <a id="navItem" href="#services">Services</a>
+        </div>
+        <div id="navBlock">
+            <a id="navItem" href="#contact">Contact Us</a>
+        </div>
+    </nav>
+
+    <div id="freshProduct" style="background-color: #FFF8F0;">
+        <div style="display: flex; justify-content: center;">
+            <h1 class="section-title">FRESH PRODUCT</h1>
+        </div>
+        <div style="display: flex; gap: 20px; padding: 20px; justify-content: center;">
+            <div class="item-card">
+                <h3 class="item-title">Vegetables</h3>
+                <img src="assets/vegetables.png" alt="Vegetables">
+                <a href="vegetables.html" class="explore-btn">Explore Vegetables</a>
+            </div>
+            <div class="item-card">
+                <h3 class="item-title">Fresh Meat</h3>
+                <img src="assets/freshMeat.png" alt="Fresh Meat">
+                <a href="freshMeat.html" class="explore-btn">Explore Fresh Meat</a>
+            </div>
+            <div class="item-card">
+                <h3 class="item-title">Frozen Product</h3>
+                <img src="assets/frozenProduct.png" alt="Frozen Product">
+                <a href="frozenProduct.html" class="explore-btn">Explore Frozen Product</a>
+            </div>
+        </div>
+    </div>
+
+    <hr style="border: none; border-top: 3px solid rgb(194, 29, 29); width: 100%; margin: 0 auto;">
+
+    <div id="contact" style="background-color: #FFF8F0; padding: 30px 20px;">
+        <div style="display: flex; justify-content: center;">
+            <h1 class="section-title">CONTACT US</h1>
+        </div>
+        <div style="display: flex; gap: 40px; justify-content: center; align-items: flex-start; flex-wrap: wrap;">
+            <div style="font-family: Papyrus; font-size: 22px; min-width: 250px;">
+                <p><strong>Address:</strong><br>
+                    353 University Ave W<br>
+                    Saint Paul, MN 55103
+                </p>
+                <p><strong>Phone:</strong><br>
+                    <a href="tel:+16512277136" style="text-decoration: none; color: rgb(194, 29, 29);">(651) 227 - 7136</a>
+                </p>
+            </div>
+            <iframe
+                src="https://maps.google.com/maps?q=Little+Saigon+Super+Market,+Saint+Paul,+MN&output=embed"
+                width="500"
+                height="350"
+                style="border: 2px solid rgb(194, 29, 29); border-radius: 8px; max-width: 100%;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
