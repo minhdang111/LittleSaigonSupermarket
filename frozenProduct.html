@@ -7,21 +7,22 @@
     <link rel="icon" href="assets/logo.png" type="image/png">
     <title>Frozen Product - Little Saigon Supermarket</title>
 </head>
-<body style="margin: 0;">
-    <div id="logo" style="display: flex; align-items: center;">
-        <div style="flex: 1;"></div>
-        <div style="flex: 1; display: flex; justify-content: center;">
-            <img src="assets/logo.png" height="200px" width="400px" style="max-width: 100%;">
+<body>
+    <div id="logo">
+        <div class="logo-spacer"></div>
+        <div class="logo-center">
+            <img src="assets/logo.png" height="200px" width="400px">
         </div>
-        <div style="flex: 1; font-size: 22px; padding: 10px; text-align: right;">
-            <address style="font-style: normal;">
+        <div class="logo-info">
+            <address>
                 353 University Ave W<br>
                 Saint Paul, MN 55103
             </address>
-            <a href="tel:+16512277136" style="text-decoration: none;">(651) 227 - 7136</a>
+            <a href="tel:+16512277136">(651) 227 - 7136</a>
         </div>
     </div>
-    <nav style="background-color: rgb(194, 29, 29); text-align: center; display: flex; flex-wrap: wrap;">
+
+    <nav>
         <div id="navBlock">
             <a id="navItem" href="index.html">Home</a>
         </div>
@@ -35,20 +36,19 @@
             <a id="navItem" href="freshProduct.html">Fresh Product</a>
         </div>
         <div id="navBlock">
-            <a id="navItem" href="#contact">Contact Us</a>
+            <a id="navItem" href="contact.html">Contact Us</a>
         </div>
     </nav>
 
-    <div style="background-color: #FFF8F0; padding: 15px 20px;">
-        <a href="freshProduct.html" style="font-family: Papyrus; font-weight: bold; font-size: 20px; color: rgb(194, 29, 29); text-decoration: underline;">&#8592; Back to Fresh Product</a>
+    <div class="back-link-bar">
+        <a href="freshProduct.html" class="back-link">&#8592; Back to Fresh Product</a>
     </div>
 
-    <div id="frozenProduct" style="background-color: #FFF8F0;">
-        <div style="display: flex; justify-content: center;">
+    <div id="frozenProduct" class="page-section">
+        <div class="section-title-wrapper">
             <h1 class="section-title">FROZEN PRODUCT</h1>
         </div>
-
-        <div style="display: flex; gap: 20px; padding: 20px; justify-content: center; flex-wrap: wrap;">
+        <div class="items-row">
             <div class="item-card-sm">
                 <h3 class="item-title">Frozen Dumplings</h3>
                 <img src="assets/frozenDumplings.png" alt="Frozen Dumplings">
@@ -80,8 +80,7 @@
                 <p class="item-price">$3.99</p>
             </div>
         </div>
-
-        <div style="display: flex; gap: 20px; padding: 20px; justify-content: center; flex-wrap: wrap;">
+        <div class="items-row">
             <div class="item-card-sm">
                 <h3 class="item-title">Frozen Pork Buns</h3>
                 <img src="assets/frozenPorkBuns.png" alt="Frozen Pork Buns">
@@ -113,8 +112,7 @@
                 <p class="item-price">$6.49</p>
             </div>
         </div>
-
-        <div style="display: flex; gap: 20px; padding: 20px; justify-content: center; flex-wrap: wrap;">
+        <div class="items-row">
             <div class="item-card-sm">
                 <h3 class="item-title">Frozen Pho Broth</h3>
                 <img src="assets/frozenPhoBroth.png" alt="Frozen Pho Broth">
@@ -148,31 +146,34 @@
         </div>
     </div>
 
-    <hr style="border: none; border-top: 3px solid rgb(194, 29, 29); width: 100%; margin: 0 auto;">
-
-    <div id="contact" style="background-color: #FFF8F0; padding: 30px 20px;">
-        <div style="display: flex; justify-content: center;">
-            <h1 class="section-title">CONTACT US</h1>
-        </div>
-        <div style="display: flex; gap: 40px; justify-content: center; align-items: flex-start; flex-wrap: wrap;">
-            <div style="font-family: Papyrus; font-size: 22px; min-width: 250px;">
-                <p><strong>Address:</strong><br>
-                    353 University Ave W<br>
-                    Saint Paul, MN 55103
-                </p>
-                <p><strong>Phone:</strong><br>
-                    <a href="tel:+16512277136" style="text-decoration: none; color: rgb(194, 29, 29);">(651) 227 - 7136</a>
-                </p>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <img src="assets/logo.png" class="footer-logo">
             </div>
-            <iframe
-                src="https://maps.google.com/maps?q=Little+Saigon+Super+Market,+Saint+Paul,+MN&output=embed"
-                width="500"
-                height="350"
-                style="border: 2px solid rgb(194, 29, 29); border-radius: 8px; max-width: 100%;"
-                allowfullscreen=""
-                loading="lazy">
-            </iframe>
+            <div class="footer-col">
+                <h3 class="footer-heading">Visit Us</h3>
+                <p>353 University Ave W<br>Saint Paul, MN 55103</p>
+                <p><a href="tel:+16512277136">(651) 227 - 7136</a></p>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Hours</h3>
+                <p>Mon – Sat: 9:00 AM – 5:45 PM</p>
+                <p>Sunday: 9:00 AM – 5:30 PM</p>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-heading">Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="deli.html">Deli Food</a></li>
+                    <li><a href="groceries.html">Groceries</a></li>
+                    <li><a href="freshProduct.html">Fresh Product</a></li>
+                    <li><a href="service.html">Services</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Little Saigon Supermarket. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
